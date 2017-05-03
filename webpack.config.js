@@ -20,12 +20,20 @@ module.exports = {
       {
         test: /\.less$/,
         loader: 'style-loader!css-loader!less-loader'
+      },
+      {
+        test: /\.css/,
+        loader: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.jpg/,
+        loader: 'file-loader'
       }
     ]
   },
   output: {
     path: __dirname + "/js",
-    filename: "client.min.js"
+    filename: "app.min.js"
   },
   plugins: debug ? [] : [
     new webpack.optimize.DedupePlugin(),
