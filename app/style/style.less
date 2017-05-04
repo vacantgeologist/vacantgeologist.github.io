@@ -1,11 +1,21 @@
 @import 'variables.less';
 /*Styles go here*/
+h1 {
+  font-family: 'Advent Pro';
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  color: @white;
+}
 header {
   // background-image: url('../resources/kobe.jpg');
+  position: fixed;
+  height: 70px;
+  width: 100%;
   background-color: @darkgrey1;
   font-family: 'Advent Pro';
   color: @white;
-  font-size: 2.0rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 .header-items {
@@ -15,6 +25,7 @@ header {
   text-align: center;
   margin: 0;
   padding: 1rem;
+  letter-spacing: 0.5rem;
 }
 .header-items > li {
   display: inline;
@@ -24,7 +35,7 @@ header {
   content: '';
   display: inline-block;
   margin: 0 1rem 0 0;
-  height: 1.8rem;
+  height: 2rem;
   border: 1px solid;
   border-color: @white;
 }
@@ -32,14 +43,13 @@ header {
   content: '';
   display: inline-block;
   margin: 0 1rem;
-  height: 1.8rem;
+  height: 2rem;
   border: 1px solid;
   border-color: @white;
 }
 
 // Greeting
 .greeting-panel {
-  margin: 0;
   height: 400px;
   background-image: url('../resources/kobe.jpg');
   background-size: cover;
@@ -51,12 +61,120 @@ header {
   margin: 0;
   width: 100%;
   height: 400px;
-  background-color: fade(@darkgrey1, 70%);
+  background-color: fade(@darkgrey1, 40%);
 }
 .greeting-panel .sheet > h1 {
   margin: 0;
   color: @white;
   font-size: 5rem;
+  font-weight: bold;
+  text-transform: none;
   font-family: 'Ubuntu Mono';
   letter-spacing: 5px;
+}
+
+// About Me
+.about-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 5rem 3rem 2rem;
+  background-color: @yellow;
+}
+.about-panel::after {
+  content: '';
+  display: inline-block;
+  top: 0;
+  left: 50px;
+  margin-top: 3rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: @foamgreen1;
+}
+.about-text {
+  font-family: 'Noto Sans CJK JP';
+  color: @darkgrey1;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  letter-spacing: 3px;
+}
+
+// Skills
+.skills-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 5rem 3rem 2rem;
+  background-color: @foamgreen1;
+}
+.skills-panel::after {
+  content: '';
+  display: inline-block;
+  margin-top: 3rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: @lightblue;
+}
+.skills-text {
+  font-family: 'Noto Sans CJK JP';
+  color: @darkgrey1;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  letter-spacing: 3px;
+}
+.skills-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.skill {
+  display: inline-block;
+  text-align: center;
+  width: 180px;
+  height: 180px;
+  border: 2px solid @white;
+  border-radius: 3%;
+  margin: 2rem;
+}
+
+// Work
+.work-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 5rem 3rem 2rem;
+  background-color: @lightblue;
+}
+.work-panel::after {
+  content: '';
+  display: inline-block;
+  margin-top: 3rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: @darkblue;
+}
+
+// Contact
+.contact-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 5rem 3rem;
+  background-color: @darkblue;
 }
