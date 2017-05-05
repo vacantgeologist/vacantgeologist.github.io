@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "./node_modules/.bin/webpack-dev-server --content-base app --inline --hot",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "cp -Rvf ./node_modules/mdi/css ./app/style/ && cp -Rvf ./node_modules/mdi/fonts ./app/style/"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +17,7 @@
     "file-loader": "^0.11.1",
     "less": "^2.7.2",
     "less-loader": "^4.0.3",
+    "mdi": "^1.9.33",
     "normalize.css": "^7.0.0",
     "style-loader": "^0.17.0",
     "webpack": "^2.4.1",

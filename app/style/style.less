@@ -8,8 +8,8 @@ h1 {
   color: @white;
 }
 header {
-  // background-image: url('../resources/kobe.jpg');
   position: fixed;
+  z-index: 100;
   height: 70px;
   width: 100%;
   background-color: @darkgrey1;
@@ -51,6 +51,7 @@ header {
 // Greeting
 .greeting-panel {
   height: 400px;
+  padding-top: 70px;
   background-image: url('../resources/kobe.jpg');
   background-size: cover;
 }
@@ -61,7 +62,7 @@ header {
   margin: 0;
   width: 100%;
   height: 400px;
-  background-color: fade(@darkgrey1, 40%);
+  background-color: fade(@darkgrey1, 80%);
 }
 .greeting-panel .sheet > h1 {
   margin: 0;
@@ -80,19 +81,21 @@ header {
   justify-content: center;
   flex-direction: column;
   margin: 0;
-  padding: 5rem 3rem 2rem;
+  padding: 5rem 3rem 0rem;
   background-color: @yellow;
 }
 .about-panel::after {
   content: '';
   display: inline-block;
-  top: 0;
-  left: 50px;
+  position: relative;
+  top: 50px;
   margin-top: 3rem;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: @foamgreen1;
+  width: 0px;
+  height: 0px;
+  border-right: solid 25px transparent;
+  border-left: solid 25px transparent;
+  border-bottom: solid 25px transparent;
+  border-top: solid 25px @yellow;
 }
 .about-text {
   font-family: 'Noto Sans CJK JP';
@@ -110,18 +113,23 @@ header {
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0;
-  padding: 5rem 3rem 2rem;
+  padding: 5rem 3rem 0rem;
   background-color: @foamgreen1;
 }
 .skills-panel::after {
   content: '';
   display: inline-block;
+  position: relative;
+  top: 50px;
   margin-top: 3rem;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: @lightblue;
+  width: 0px;
+  height: 0px;
+  border-right: solid 25px transparent;
+  border-left: solid 25px transparent;
+  border-bottom: solid 25px transparent;
+  border-top: solid 25px @foamgreen1;
 }
+
 .skills-text {
   font-family: 'Noto Sans CJK JP';
   color: @darkgrey1;
@@ -145,6 +153,16 @@ header {
   border-radius: 3%;
   margin: 2rem;
 }
+.skill > i {
+  color: @white;
+  font-size: 8rem;
+}
+.skill > span {
+  display: block;
+  color: @white;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
 
 // Work
 .work-panel {
@@ -154,17 +172,43 @@ header {
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0;
-  padding: 5rem 3rem 2rem;
+  padding: 5rem 3rem 0rem;
   background-color: @lightblue;
 }
 .work-panel::after {
   content: '';
   display: inline-block;
+  position: relative;
+  top: 50px;
   margin-top: 3rem;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: @darkblue;
+  width: 0px;
+  height: 0px;
+  border-right: solid 25px transparent;
+  border-left: solid 25px transparent;
+  border-bottom: solid 25px transparent;
+  border-top: solid 25px @lightblue;
+}
+.download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  height: 110px;
+  width: 480px;
+  // border: 2px solid @white;
+  border-radius: 10px;
+  background-color: fade(@white, 85%);
+}
+.download > i {
+  font-size: 3rem;
+  color: @lightblue;
+  margin-right: 1rem;
+}
+.download > span {
+  color: @lightblue;
+  line-height: 3rem;
+  vertical-align: middle;
+  font-size: 2rem;
 }
 
 // Contact
@@ -177,4 +221,31 @@ header {
   margin: 0;
   padding: 5rem 3rem;
   background-color: @darkblue;
+}
+.contact-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+.contact > i {
+  color: fade(@white, 30%);
+  font-size: 6rem;
+  margin: 2rem;
+}
+.contact > i:hover {
+  transition: 0.3s;
+  color: @white;
+}
+
+// Footer
+footer {
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  padding: 0.8rem;
+  text-transform: uppercase;
+  background-color: @darkgrey1;
+  color: @white;
 }
