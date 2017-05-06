@@ -41,6 +41,42 @@ header {
   margin: 0;
   padding: 1rem;
 }
+.lang-select {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  right: 0;
+  margin: 0;
+  width: 100px;
+  background-color: @darkgrey1;
+  list-style: none;
+}
+.lang {
+  background-color: fade(@darkgrey1, 40%);
+}
+.lang-select:hover {
+  transition: 0.1s;
+  cursor: pointer;
+  background-color: fade(@white, 10%);
+}
+.lang:hover {
+  transition: 0.1s;
+  cursor: pointer;
+  background-color: fade(@foamgreen1, 50%);
+}
+.lang-select > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70px;
+  width: 100px;
+  font-size: 1.2rem;
+  color: @white;
+}
+.lang-current > span {
+  display: inline-block;
+}
 
 // Greeting
 .greeting-panel {

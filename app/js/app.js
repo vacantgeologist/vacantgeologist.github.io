@@ -11,8 +11,20 @@ var greetingMessage = 'hi({ to: you });'.split("");
 var headerOffset = 70;
 
 $(document).ready(function() {
-  //i18n
+  // i18n
   $("[data-localize]").localize("content", {language: "ja"});
+
+  // Language selector hide/show
+  $(".lang").hide();
+  $(".lang-current, .lang").hover(showLangSelect, hideLangSelect);
+
+  // Select language
+  $(".localize-en").click(function(){
+    setCurrentLang('en');
+  });
+  $(".localize-ja").click(function(){
+    setCurrentLang('ja');
+  });
 
   var revealer = setInterval(function(){
     if (revealCounter < greetingMessage.length) {
@@ -57,5 +69,30 @@ function blinkCursor() {
   } else {
     $("#cursor").hide();
     $("#space").show();
+  }
+}
+
+function showLangSelect() {
+  $(".lang").show();
+}
+
+function hideLangSelect () {
+  $(".lang").hide();
+}
+
+function setCurrentLang(lang) {
+  if (lang === 'en') {
+    $("[data-localize]").localize("content", {language: "en"});
+    $(".lang-current").text('English');
+    // Hide menu after click
+    $(".lang").hide();
+    return;
+  }
+  if (lang === 'ja') {
+    $("[data-localize]").localize("content", {language: "ja"});
+    $(".lang-current").text('日本語');
+    // Hide menu after click
+    $(".lang").hide();
+    return;
   }
 }
