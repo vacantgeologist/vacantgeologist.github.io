@@ -16,6 +16,7 @@
     "css-loader": "^0.28.1",
     "file-loader": "^0.11.1",
     "jquery": "^3.2.1",
+    "jquery-localize": "^0.1.0",
     "less": "^2.7.2",
     "less-loader": "^4.0.3",
     "mdi": "^1.9.33",

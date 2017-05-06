@@ -1,8 +1,11 @@
+/* jshint esversion: 6 */
+
 require('normalize.css');
+require('jquery-localize');
 require('../style/style.less');
 const $ = require('jquery');
 
-// variables
+// Shared variables
 let showCursor = false;
 let revealCounter = 0;
 let greetingMessage = 'hi({ to: you });'.split("");
