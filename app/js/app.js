@@ -1,21 +1,23 @@
 /* jshint esversion: 6 */
 
 require('normalize.css');
-require('jquery-localize');
 require('../style/style.less');
-const $ = require('jquery');
+require('jquery-localize');
 
 // Shared variables
-let showCursor = false;
-let revealCounter = 0;
-let greetingMessage = 'hi({ to: you });'.split("");
-let headerOffset = 70;
+var showCursor = false;
+var revealCounter = 0;
+var greetingMessage = 'hi({ to: you });'.split("");
+var headerOffset = 70;
 
 $(document).ready(function() {
+  //i18n
+  $("[data-localize]").localize("content", {language: "ja"});
+
   var revealer = setInterval(function(){
     if (revealCounter < greetingMessage.length) {
       revealCounter ++;
-      let textToShow = greetingMessage.slice(0, revealCounter).join('');
+      var textToShow = greetingMessage.slice(0, revealCounter).join('');
       $("#greetingText").text(textToShow);
     } else {
       clearInterval(revealer);
