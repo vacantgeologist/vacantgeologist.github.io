@@ -32,7 +32,7 @@ module.exports = {
     ]
   },
   output: {
-    path: __dirname + "/js",
+    path: __dirname + "/app/",
     filename: "app.min.js"
   },
   plugins: [
