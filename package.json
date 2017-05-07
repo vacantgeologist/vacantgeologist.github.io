@@ -7,7 +7,7 @@
     "dev": "./node_modules/.bin/webpack-dev-server --content-base . --inline --hot",
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "cp -Rvf ./node_modules/mdi/css ./app/style/ && cp -Rvf ./node_modules/mdi/fonts ./app/style/"
+    "postinstall": "cp -Rvf ./node_modules/mdi/css ./style/ && cp -Rvf ./node_modules/mdi/fonts ./style/"
   },
   "author": "",
   "license": "ISC",
