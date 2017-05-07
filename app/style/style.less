@@ -77,6 +77,9 @@ header {
 .lang-current > span {
   display: inline-block;
 }
+.lang-select-mobile {
+  display: none;
+}
 
 // Greeting
 .greeting-panel {
@@ -295,10 +298,14 @@ footer {
       margin-bottom: 5rem;
     }
     .greeting-panel, .sheet {
-      height: 180px;
+      // height: 180px;
+      // background-color: @darkgrey1;
     }
     .sheet > h1 {
-      font-size: 3rem;
+      margin-top: 130px;
+      // font-size: 3rem;
+      // display: none;
+      // color: fade(@white, 0);
     }
     .about-panel > img {
       width: 500px;
@@ -310,8 +317,28 @@ footer {
       line-height: 4.5rem;
       margin-top: 3rem;
     }
-    header {
+    .header-items {
       display: none;
+    }
+    .lang-select, .lang-select > li {
+      display: none;
+    }
+    .lang-select-mobile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+    }
+    .lang-select-mobile > li {
+      display: inline-block;
+      width: 50%;
+      text-align: center;
+      margin: 1rem;
+      font-size: 3rem;
+    }
+    .current-mobile-lang {
+      // font-weight: bold;
+      color: @lightblue;
     }
     .greeting-panel {
       padding-top: 0;

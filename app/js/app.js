@@ -12,7 +12,7 @@ var headerOffset = 70;
 
 $(document).ready(function() {
   // i18n
-  $("[data-localize]").localize("content", {language: "ja"});
+  $("[data-localize]").localize("content", {language: "en"});
 
   // Language selector hide/show
   $(".lang").hide();
@@ -21,9 +21,13 @@ $(document).ready(function() {
   // Select language
   $(".localize-en").click(function(){
     setCurrentLang('en');
+    $(".localize-en").addClass('current-mobile-lang');
+    $(".localize-ja").removeClass('current-mobile-lang');
   });
   $(".localize-ja").click(function(){
     setCurrentLang('ja');
+    $(".localize-ja").addClass('current-mobile-lang');
+    $(".localize-en").removeClass('current-mobile-lang');
   });
 
   var revealer = setInterval(function(){
