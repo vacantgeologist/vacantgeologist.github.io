@@ -10,7 +10,7 @@ var revealCounter = 0;
 var greetingMessage = 'hi({ to: you });'.split("");
 var headerOffset = 70;
 
-$(document).ready(function() {
+$(window).on('load', function() {
   // i18n
   $("[data-localize]").localize("content", {language: "en"});
 
