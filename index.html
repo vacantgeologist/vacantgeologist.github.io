@@ -8,105 +8,108 @@
   <script src="app.min.js"></script>
 </head>
 <body>
-  <header>
-    <ul class="header-items">
-      <li><a id="aboutLink">About</a></li>
-      <li><a id="skillsLink">Skills</a></li>
-      <li><a id="workLink">Work</a></li>
-      <li><a id="contactLink">Contact</a></li>
-    </ul>
-    <ul class="lang-select">
-      <li class="lang-current">English</li>
-      <li class="lang localize-ja">日本語</li>
-      <li class="lang localize-en">English</li>
-    </ul>
-    <ul class="lang-select-mobile">
-      <li class="localize-ja">日本語</li>
-      <li class="localize-en current-mobile-lang">English</li>
-    </ul>
-  </header>
-  <section class="greeting">
-    <!-- Greeting here -->
-    <div class="greeting-panel">
-      <div class="sheet">
-        <h1>&gt;</h1><h1 id="greetingText"></h1><h1 id="cursor">_</h1><h1 id="space">&nbsp;</h1>
-      </div>
-    </div>
-  </section>
-  <section id="aboutMe">
-    <div class="about-panel">
-      <h1>About Me</h1>
-      <img src="../resources/profile.png" alt="">
-      <p data-localize="aboutMe" class="about-text"></p>
-    </div>
-    <!-- About me -->
-  </section>
-  <section id="skills">
-    <!-- My skills -->
-    <div class="skills-panel">
-      <h1>My Skills</h1>
-      <div class="skills-icons">
-        <div class="skill">
-          <i class="mdi mdi-language-javascript"></i>
-          <span>Javascript</span>
-        </div>
-        <div class="skill">
-          <i class="mdi mdi-react"></i>
-          <span>React</span>
-        </div>
-        <div class="skill">
-          <i class="mdi mdi-language-css3"></i>
-          <span>HTML5/CSS3</span>
-        </div>
-        <div class="skill">
-          <i class="mdi mdi-code-braces"></i>
-          <span data-localize="api"></span>
-        </div>
-        <div class="skill">
-          <i class="mdi mdi-nodejs"></i>
-          <span>Node.js</span>
+  <div class="loading"><div class="loader"></div></div>
+  <div class="content">
+    <header>
+      <ul class="header-items">
+        <li><a id="aboutLink">About</a></li>
+        <li><a id="skillsLink">Skills</a></li>
+        <li><a id="workLink">Work</a></li>
+        <li><a id="contactLink">Contact</a></li>
+      </ul>
+      <ul class="lang-select">
+        <li class="lang-current">English</li>
+        <li class="lang localize-ja">日本語</li>
+        <li class="lang localize-en">English</li>
+      </ul>
+      <ul class="lang-select-mobile">
+        <li class="localize-ja">日本語</li>
+        <li class="localize-en current-mobile-lang">English</li>
+      </ul>
+    </header>
+    <section class="greeting">
+      <!-- Greeting here -->
+      <div class="greeting-panel">
+        <div class="sheet">
+          <h1>&gt;</h1><h1 id="greetingText"></h1><h1 id="cursor">_</h1><h1 id="space">&nbsp;</h1>
         </div>
       </div>
-      <p data-localize="skills" class="skills-text"></p>
-    </div>
-  </section>
-  <section id="work">
-    <div class="work-panel">
-      <h1>Work</h1>
-      <a class="download-link" href="https://www.dropbox.com/s/duft2tcktnhgejr/Kevin%20McCoy%20Resume%20EN%20JA.zip?dl=0" target="_blank">
-        <div class="download">
-          <i class="mdi mdi-briefcase-download"></i>
-          <span data-localize="resumeDownload"></span>
+    </section>
+    <section id="aboutMe">
+      <div class="about-panel">
+        <h1>About Me</h1>
+        <img src="../resources/profile.png" alt="">
+        <p data-localize="aboutMe" class="about-text"></p>
+      </div>
+      <!-- About me -->
+    </section>
+    <section id="skills">
+      <!-- My skills -->
+      <div class="skills-panel">
+        <h1>My Skills</h1>
+        <div class="skills-icons">
+          <div class="skill">
+            <i class="mdi mdi-language-javascript"></i>
+            <span>Javascript</span>
+          </div>
+          <div class="skill">
+            <i class="mdi mdi-react"></i>
+            <span>React</span>
+          </div>
+          <div class="skill">
+            <i class="mdi mdi-language-css3"></i>
+            <span>HTML5/CSS3</span>
+          </div>
+          <div class="skill">
+            <i class="mdi mdi-code-braces"></i>
+            <span data-localize="api"></span>
+          </div>
+          <div class="skill">
+            <i class="mdi mdi-nodejs"></i>
+            <span>Node.js</span>
+          </div>
         </div>
-      </a>
-    </div>
-    <!-- My work -->
-  </section>
-  <section id="contact">
-    <!-- Contact -->
-    <div class="contact-panel">
-      <h1>Contact</h1>
-      <div class="contact-icons">
-        <a href="mailto:km.takewithyou@gmail.com">
-          <div class="contact">
-            <i class="mdi mdi-gmail"></i>
-          </div>
-        </a>
-        <a href="https://www.github.com/vacantgeologist" target="_blank">
-          <div class="contact">
-            <i class="mdi mdi-github-circle"></i>
-          </div>
-        </a>
-        <a href="https://www.twitter.com/vacantgeologist" target="_blank">
-          <div class="contact">
-            <i class="mdi mdi-twitter"></i>
+        <p data-localize="skills" class="skills-text"></p>
+      </div>
+    </section>
+    <section id="work">
+      <div class="work-panel">
+        <h1>Work</h1>
+        <a class="download-link" href="https://www.dropbox.com/s/duft2tcktnhgejr/Kevin%20McCoy%20Resume%20EN%20JA.zip?dl=0" target="_blank">
+          <div class="download">
+            <i class="mdi mdi-briefcase-download"></i>
+            <span data-localize="resumeDownload"></span>
           </div>
         </a>
       </div>
-    </div>
-  </section>
-  <footer>
-    &copy; 2017 Kevin McCoy. Photo of Kobe by Leitr Keiows.
-  </footer>
+      <!-- My work -->
+    </section>
+    <section id="contact">
+      <!-- Contact -->
+      <div class="contact-panel">
+        <h1>Contact</h1>
+        <div class="contact-icons">
+          <a href="mailto:km.takewithyou@gmail.com">
+            <div class="contact">
+              <i class="mdi mdi-gmail"></i>
+            </div>
+          </a>
+          <a href="https://www.github.com/vacantgeologist" target="_blank">
+            <div class="contact">
+              <i class="mdi mdi-github-circle"></i>
+            </div>
+          </a>
+          <a href="https://www.twitter.com/vacantgeologist" target="_blank">
+            <div class="contact">
+              <i class="mdi mdi-twitter"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      &copy; 2017 Kevin McCoy. Photo of Kobe by Leitr Keiows.
+    </footer>
+  </div>
 </body>
 </html>
