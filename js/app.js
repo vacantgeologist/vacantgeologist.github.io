@@ -11,13 +11,11 @@ var greetingMessage = 'hi({ to: you });'.split("");
 var headerOffset = 70;
 
 $(document).ready(function() {
-  $(".content").hide();
 });
 
 $(window).on('load', function() {
   // Hide loading
   $(".loading").hide();
-  $(".content").show();
   // i18n
   $("[data-localize]").localize("content", {language: "en"});
 
