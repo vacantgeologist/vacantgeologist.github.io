@@ -1,6 +1,5 @@
 {
   "aboutMe": "Hi, my name is Kevin. I was born in the USA in 1985, and moved to Japan when I was 23. I've lived in Kobe since then. After working as an interpreter for a few years, I eventually began my current career as a Web developer. When I'm not coding, I like to spend time with my son, play baseball, and geek out with synthesizers.",
   "api": "REST API",
-  "skills": "I'm most passionate about frontend development, but I've also done backend work with Node.js. Recently, I have been enjoying the challenge of building stateful single page web apps that integrate with REST APIs. React is my favorite library and I like to use it wherever appropriate, but I'm also comfortable with jQuery and vanilla Javascript too. In my current toolchain, I use npm, webpack, and LESS, but I'm always open to new and better ideas.",
-  "resumeDownload": "Download Resume"
+  "skills": "I'm most passionate about frontend development, but I've also done backend work with Node.js. Recently, I have been enjoying the challenge of building stateful single page web apps that integrate with REST APIs. React is my favorite library and I like to use it wherever appropriate, but I'm also comfortable with jQuery and vanilla Javascript too. In my current toolchain, I use npm, webpack, and LESS, but I'm always open to new and better ideas."
 }
